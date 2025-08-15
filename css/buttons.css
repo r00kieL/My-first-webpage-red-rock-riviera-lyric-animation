@@ -1,0 +1,67 @@
+.glass-button {
+  padding: 0.6em 1em;
+
+  /* 设置字体样式 */
+  font-size: 1em;
+  color: #fff;
+
+  /* 设置背景样式 */
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 0.5em;
+
+  /* 添加毛玻璃效果 */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  /* 设置鼠标悬浮时显示可点击样式 */
+  cursor: pointer;
+
+  /* 设置过渡动画 */
+  transition: opacity 1s ease;
+
+  /* 设置定位 */
+  position: fixed;
+  
+}
+.glass-button:hover {
+  /* 鼠标悬浮时背景变深 */
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.ui-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ------------------------------------------ */
+
+/* 歌词动画按钮 */
+body #toggle-lyric {
+  top: 1em;
+  left: 1em;
+}
+
+/* MV播放按钮 */
+body #toggle-mv {
+  top: 1em;
+  right: 1em;
+}
+
+/* 跳过MV前奏按钮 */
+body #toggle-skipPrelude {
+  top: 4.5em;
+  right: 1em;
+}
+
+/* 切换背景按钮 */
+body #toggle-bg {
+  bottom: 1em;
+  left: 1em;
+}
+
+/* 歌词动画按钮 */
+#toggle-bgm {
+  bottom: 1em;
+  right: 1em;
+}
