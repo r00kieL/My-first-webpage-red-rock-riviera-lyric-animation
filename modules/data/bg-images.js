@@ -4,7 +4,7 @@ const TRANSITION_DURATION = 1000;
 const TOTAL_LOCK_DURATION = TRANSITION_DURATION + 300;
 
 // 图片路径
-const IMG = (imgName) => `url("/image/${imgName}")`;
+const IMG = (imgName) => `url("./image/${imgName}")`;
 const bgImage = [
     IMG("disco-church-wallpaper-4k.png"),
     IMG("disco-conquest-wallpaper-4k.png"),
