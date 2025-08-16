@@ -12,7 +12,7 @@ function setupBgmToggle() {
 
     // 按钮逻辑：点击切换播放/暂停音乐
     state.bgmButton.addEventListener("click", () => {
-        if (isPlaying) {
+        if (state.isMusicMode) {
             state.bgm.pause();
             state.bgmButton.textContent = "播放音乐";
         } else {
@@ -20,7 +20,7 @@ function setupBgmToggle() {
             state.bgmButton.textContent = "暂停音乐";
         }
 
-        isPlaying = !isPlaying;
+        state.isMusicMode = !state.isMusicMode;
     });
 }
 

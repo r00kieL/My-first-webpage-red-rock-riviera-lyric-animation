@@ -42,13 +42,16 @@ function handleVideoEnded() {
  */
 function enterMVMode() {
     state.isMVMode = true;
+    state.isMusicMode = false;
 
     state.video.volume = 0.5;
     state.video.muted = false;
+    state.bgm.pause();
     state.video.play();
 
     state.video.style.opacity = 1;
     state.videoButton.textContent = "暂停MV";
+    state.bgmButton.textContent = "播放音乐";
 
     resetLyricLines(0);
 
