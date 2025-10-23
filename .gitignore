@@ -1,0 +1,24 @@
+# 忽略整個 image、music、MV 資料夾
+/image/
+/music/
+/MV/
+
+# 但保留 image/favicon 這個子資料夾
+!image/favicon/
+!image/favicon/*
+
+# 通用：忽略常见大文件类型
+**/*.mp4
+**/*.mp3
+**/*.jpg
+**/*.png
+**/*.mov
+**/*.zip
+**/*.rar
+
+# node_modules、打包输出、日志等常见文件
+node_modules/
+dist/
+build/
+*.log
+.DS_Store

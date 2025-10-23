@@ -1,0 +1,31 @@
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+
+  display: flex; /* 启动flex */
+  flex-direction: column; /* 主轴切换至纵向排布 */
+  align-items: center; /* 交叉轴居中 */
+  min-height: 100vh; /* 最小高度为高度 */
+  justify-content: center; /* 主轴居中 */
+
+  /* 清除默认margin */
+  margin: 0;
+
+  background-size: cover; /* 背景图片覆盖整个容器 */
+  background-position: top; /* 设置图片锚点为中上，教堂下移，看起来更加居中 */
+  background-attachment: fixed; /* 背景固定，滚动时不动 */
+
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 使用伪元素给背景添加黑色透明遮罩，降低亮度 */
+body::before {
+  /* 设置伪元素背景 */
+  content: ""; /* 伪元素内容为空 */
+
+  position: fixed; /* 伪元素固定定位 */
+  inset: 0; /* 伪元素填充整个容器 */
+  z-index: -1; /* 伪元素置于最底层 */
+
+  background: rgba(0, 0, 0, 0.2); /* 半透明黑色背景 */
+}

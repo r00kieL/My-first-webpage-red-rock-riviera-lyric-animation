@@ -1,0 +1,33 @@
+/* 设置歌词毛玻璃背景 */
+.glass-box {
+  /* 设置文字背景样式 */
+  background: rgba(0, 0, 0, 0.3); /* 半透明黑色背景 */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+  border-radius: 1em; /* 圆角边框 */
+
+  /* 添加毛玻璃效果 */
+  -webkit-backdrop-filter: blur(10px); /* 显示效果兼容Safari */
+  backdrop-filter: blur(10px); /* 设置背景模糊效果 */
+
+  /* 设置样式尺寸和尺寸限制 */
+  padding: 2em; /* 内边距为2em */
+  max-width: 40em; /* content最大宽度为40em */
+
+  transition: opacity 1s ease;
+
+  height: 600px;
+}
+
+p {
+  max-width: 30em; /* 最大宽度为30em */
+  margin: 1.2em auto; /* 上下外边距为1.2em，左右自动 */
+  line-height: 1.8; /* 行高为1.8 */
+  text-align: center; /* 文本居中 */
+}
+
+.lyric-container {
+  position: absolute;
+
+  left: 45%;
+  top: 30%;
+}

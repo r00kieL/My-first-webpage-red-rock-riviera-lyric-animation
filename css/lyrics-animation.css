@@ -1,0 +1,24 @@
+/* 歌词行css */
+.lyric-line {
+  opacity: 0.1; /* 初始透明度为0.1 */
+  transform: translateY(20px); /* 初始位置向下偏移20px */
+  transition: opacity 1s ease, transform 1s ease; /* 过渡效果：透明度和位置变化 */
+}
+
+/* 歌词高亮动画效果 */
+.lyric-line strong {
+  transition: opacity 0.8s ease, transform 0.8s ease, text-shadow 0.5s ease,
+    font-weight 0.5s ease 0.5s;
+}
+.lyric-line strong.highlight {
+  /* prettier-ignore */
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.3),
+    0 0 8px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.5),
+    0 0 8px rgba(255, 255, 255, 0.5), 
+    0 0 8px rgba(255, 255, 255, 0.5);
+}
+.lyric-line strong.bold-only {
+  text-shadow: none;
+}
