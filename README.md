@@ -1,6 +1,6 @@
-# MV歌词动画展示项目（Lite版）
+# Red rock riviera lyric
 
-本项目是一个用于展示 MV 歌词浮现动画的前端项目，使用原生 HTML / CSS / JavaScript 编写，结构清晰、动画平滑，支持：
+本项目是一个用于展示 MV 歌词浮现动画的前端项目，使用原生 HTML / CSS / JavaScript 编写，实现了：
 
 - 背景图渐变切换
 - 歌词逐行浮现 + 发光动画
